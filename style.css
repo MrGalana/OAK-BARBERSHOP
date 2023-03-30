@@ -1,7 +1,7 @@
-/* css da Home Page */
+/* CSS da Home Page */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(brick-wall.png);
+    background-image: url(brick-wall-dark.png);
     color: whitesmoke;
 }
 
@@ -67,6 +67,7 @@ nav a:hover {
     font-weight: bold;
     width: 940px;
     margin: 0 0 0 50px;
+    color: rgb(253, 253, 164);
 }
 
 .principal p {
@@ -88,6 +89,7 @@ nav a:hover {
 
 .itens:before {
     content: "✂ ";
+    color: rgb(253, 253, 164);
 }
 
 .lista-beneficios {
@@ -116,6 +118,7 @@ table {
     text-transform: uppercase;
     width: 100%;
     margin: 80px 0 50px;
+    color: rgb(253, 253, 164);
 }
 
 thead {
@@ -132,7 +135,7 @@ td, th {
     font-size: 20px;
 }
 
-thead th {
+thead th, .localizacao strong, .profissionais strong {
     color: rgb(253, 253, 164);
 }
 
@@ -189,6 +192,7 @@ tr:nth-child(even) {
     width: 100%;
     justify-content: space-around;
     font-weight: bold;
+    color: #cfb54f;
 }
 
 .david-gustavo, .lucas-ramon {
@@ -238,4 +242,200 @@ tr:nth-child(even) {
     color: rgb(253, 253, 164);
     font-size: 20px;
     margin: 0 0 20px 0;
+}
+
+/* CSS da página Serviços */
+
+.menu-servicos {
+    margin: 120px auto;
+    padding: 5% 0;
+    width: 50%;
+    border: 40px rgb(11, 11, 11);
+    border-style: groove;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 20px 20px 20px 0 rgba(0,0,0,0.5);
+}
+
+.titulo-servicos, .servico-corte {
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    margin: 50px 0 0 0;
+}
+
+.descricao-corte {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    margin: 5px 0 80px 0;
+    padding: 0 20%;
+}
+
+/* CSS da página Contato */
+
+form {
+    margin: 30px 0 0 80px;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: rgb(253, 253, 164);
+}
+
+.apresentacao-contato h2 {
+    font-size: 20px;
+    margin: 0 0 30px 80px;
+    color: rgb(253, 253, 164);
+}
+
+.apresentacao-contato p {
+    font-size: 20px;
+    margin: 20px 0 60px 80px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 50px;
+    padding: 10px 20px;
+    width: 50%;
+    font-size: 18px;
+    text-align: left;
+}
+
+#mensagem::-webkit-input-placeholder {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.input-agenda {
+    margin: 50px 0 20px 0;
+}
+
+.input-agenda em {
+    text-decoration: underline;
+}
+
+.input-agenda input {
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 0 30px;
+    cursor: pointer;
+}
+
+.enviar {
+    width: 22%;
+    padding: 10px;
+    background: #cfb54f;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #c2a220;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.informativo {
+    font-size: 20px;
+    padding: 0 80px;
+    margin: 50px 0;
+    text-align: justify;
+    width: 0 auto;
+    line-height: 1.2;
+}
+
+.informativo strong {
+    text-transform: uppercase;
+    color: #cfb54f;
+}
+
+.oak-contato {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.oak-contato p::first-letter, .oak-contato h3 {
+    color: #cfb54f;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .conteudo-beneficios, .mapa-localizacao, .principal h2, .principal p, .lista-beneficios, table, .menu-servicos{
+        width: auto;
+    }
+
+    .caixa {
+        text-align: center;
+    }
+
+    .titulo-subtitulo, .principal h2, .titulo-table, h1, h2, h3, .menu-servicos, .servico-corte, label {
+        font-size: 20px;
+    }
+
+    .subtitulo, p, .titulo-subtitulo em, nav a, td, th, .localizacao, .descricao-corte, .lista-beneficios, .input-padrao, .apresentacao-contato p {
+        font-size: 15px;
+    }
+
+    .imagem-beneficios, .imagens-servicos {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    nav {
+        position: static;
+        width: 0 auto;
+    }
+
+    nav li {
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .localizacao, .profissionais {
+        margin: 50px 30px 0;
+    }
+
+    .menu-servicos {
+        margin: 0 20px 0;
+    }
+
+    input, form, .apresentacao-contato p {
+        margin: 0 0 30px 20px;
+    }
+
+    .input-padrao {
+        width: 80%;
+        margin: 0 0 20px 0;
+    }
+
+    #mensagem::-webkit-input-placeholder, .agradecimento {
+        font-size: 13px;
+    }    
+
+    .radio-menu legend {
+        margin: 0 0 30px 0;
+    }
+
+    .input-agenda {
+        margin: 0 auto;
+    }
+
+    .enviar {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .informativo {
+        padding: 0 20px;  
+    }
 }

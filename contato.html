@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>OAK Barbershop</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            
+            <img src="Logo OAK BARBERSHOP.png" alt="Logo OAK Barbershop sob um painel de madeira." class="logo-header">
+
+            <div class="caixa">
+                <nav>
+                    <ul class="navegacao">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+                <section class="titulo-subtitulo">
+                    <h1><strong>OAK Barbershop</strong></h1>
+
+                    <p class="subtitulo">Corte de Cabelo e Barba</p>
+
+                    <p><em>- Mantenham-se elegantes, cavalheiros. -</em></p>
+                </section>
+        </header>
+
+        <main>
+            <div class="apresentacao-contato">
+                <h2>Seja bem-vindo, Cavalheiro!</h2>
+                <p>Preencha com seus dados e marque seu horário para um atendimento preciso ou compareça em nossa barbearia dentro do horário de atendimento, sujeito à espera.</p>
+            </div>
+
+            <form>
+                <label for="nomeesobrenome">Nome e Sobrenome:</label>
+                <input type="text" id="nomeesobrenome" class="input-padrao" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone / Celular:</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Informações adicionais:</label>
+                <textarea cols="10" rows="8" id="mensagem"
+                class="input-padrao" placeholder="Informações adicionais para melhor atendê-lo, cavalheiro.&#10;&#10;Exemplos:&#10;- Estou trajado para um casamento e não posso me sujar. -&#10;- Preciso do corte dentro de 1 hora. -&#10;- Sou cadeirante ou portador de alguma necessidade física. -&#10;- Sou alérgico a loções ou lâminas. -"></textarea>
+
+                <fieldset class="radio-menu">
+                    <legend>Se necessário, entraremos em contato. Como prefere ser atendido?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone / Celular</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset> 
+
+                <fieldset class="input-agenda">
+                    <label for="data">Agende a data que melhor lhe atende (<em>*domingos e feriados não serão agendados*</em>):</label>
+                    <input type="date" id="data" required>
+
+                    <label for="input-horario">Agende um horário (atendimento das 8:00 às 18:00):</label>
+                    <input id="input-horario" type="time" name="horario" min="08:00" max="18:00" required>
+                </fieldset>
+
+                <input type="submit" value="Confirmar Agendamento" class="enviar">
+            </form>
+
+                <div class="informativo">
+                    <h3>Informativo:</h3>
+                    <p>Ao fazer um agendamento, será enviada uma mensagem pelo meio de contato escolhido confirmando o agendamento. Caso haja um imprevisto por parte da <strong>OAK Barbershop</strong> entraremos em contato para remarcarmos uma nova data. Em caso de cancelamento de um agendamento, pedimos, por gentileza, que nos informe por um de nossos meios de contato. Você ainda pode nos contatar para reclamações, sugestões ou dúvidas.</p>  
+                </div>   
+                    
+                <div class="oak-contato">
+                    <h3>- Entre em contato conosco -</h3>
+                    <p>☏ (12) 3935-1195</p>
+                    <p>✆ (12) 98145-8929</p>
+                    <p>✉ oakbarbershop@gmail.com</p>
+                </div>
+        </main>
+
+        <footer>
+            <div class="imagens-servicos">
+                <img src="Imagem-Barba.png" alt="Barbeiro cortando a barba com tesoura." class="imagem-barba">
+                <img src="Imagem-Corte.png" alt="Barbeiro com máquina ajeitando a barba." class="imagem-corte">
+            </div>
+
+            <p class="copyright">&copy;OAK Barbershop</p>
+            <p class="agradecimento">- Obrigado pela visita, esperamos vê-lo em breve! -</p>
+
+            <img src="Logo OAK-Footer.png" alt="Salão OAK com seu logo." class="logo-footer">
+
+        </footer>
+    </body>
+</html>
